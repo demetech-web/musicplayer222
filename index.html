@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-card">
+    <img id="cover" src="whatever.png" alt="whatever.png">
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist Name</h3>
+
+    <audio id="audio" src="arike.mp3"></audio>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time-container">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-container">
+      <span>🔊</span>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div class="controls">
+      <button id="prev">⏮ Prev</button>
+      <button id="play">▶ Play</button>
+      <button id="next">⏭ Next</button>
+      <button id="download-current" title="Download Current Song">📥 Save</button>
+    </div>
+
+    <!-- TRACKLIST SECTION -->
+    <div class="playlist-container">
+      <h3>Playlist</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
